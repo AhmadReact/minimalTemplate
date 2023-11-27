@@ -99,6 +99,13 @@ export const paths = {
     calendar: `${ROOTS.DASHBOARD}/calendar`,
     fileManager: `${ROOTS.DASHBOARD}/file-manager`,
     permission: `${ROOTS.DASHBOARD}/permission`,
+    employeelist: `${ROOTS.DASHBOARD}/employeelist`,
+    projectlist: `${ROOTS.DASHBOARD}/projectlist`,
+    companylist: `${ROOTS.DASHBOARD}/companylist`,
+    industrylist: `${ROOTS.DASHBOARD}/industrylist`,
+    employee: `${ROOTS.DASHBOARD}/employee`,
+    company: `${ROOTS.DASHBOARD}/company`,
+    industryprofile: `${ROOTS.DASHBOARD}/industryprofile`,
     general: {
       app: `${ROOTS.DASHBOARD}/app`,
       ecommerce: `${ROOTS.DASHBOARD}/ecommerce`,

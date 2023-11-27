@@ -1,17 +1,16 @@
 import { Helmet } from 'react-helmet-async';
-
-import CompanyListView from 'src/sections/blog/view/company-list-view';
+import CompanyWorkWith from 'src/sections/employee/companyworkwith';
 
 // ----------------------------------------------------------------------
 
-export default function PostListPage() {
+export default function EmployeeDashboard() {
   return (
     <>
       <Helmet>
-        <title> Dashboard: Post List</title>
+        <title> Dashboard: Blank</title>
       </Helmet>
 
-      <CompanyListView />
+      <CompanyWorkWith />
     </>
   );
 }

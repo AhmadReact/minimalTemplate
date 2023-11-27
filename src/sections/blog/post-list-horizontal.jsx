@@ -19,7 +19,7 @@ export default function PostListHorizontal({ posts, loading }) {
 
   const renderList = (
     <>
-      {posts.map((post) => (
+      {posts.slice(0, 4).map((post) => (
         <PostItemHorizontal key={post.id} post={post} />
       ))}
     </>
@@ -43,6 +43,7 @@ export default function PostListHorizontal({ posts, loading }) {
           count={8}
           sx={{
             mt: 8,
+
             [`& .${paginationClasses.ul}`]: {
               justifyContent: 'center',
             },

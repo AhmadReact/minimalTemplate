@@ -5,6 +5,11 @@ import { Outlet } from 'react-router-dom';
 import DashboardLayout from 'src/layouts/dashboard';
 
 import { LoadingScreen } from 'src/components/loading-screen';
+import ProjectList from 'src/pages/dashboard/projectlist';
+import CompanyList from 'src/pages/dashboard/companylist';
+import IndustryList from 'src/pages/dashboard/industrylist';
+import EmployeeDashboard from 'src/pages/dashboard/employeedashboard';
+import CompanyDashboard from 'src/pages/dashboard/companydashboard';
 
 // ----------------------------------------------------------------------
 
@@ -81,6 +86,12 @@ export const dashboardRoutes = [
       { path: 'banking', element: <OverviewBankingPage /> },
       { path: 'booking', element: <OverviewBookingPage /> },
       { path: 'file', element: <OverviewFilePage /> },
+      { path: 'employeelist', element: <UserListPage /> },
+      { path: 'projectlist', element: <ProjectList /> },
+      { path: 'companylist', element: <CompanyList /> },
+      { path: 'industrylist', element: <IndustryList /> },
+      { path: 'employee', element: <EmployeeDashboard /> },
+      { path: 'company', element: <CompanyDashboard /> },
       {
         path: 'user',
         children: [

@@ -58,9 +58,28 @@ export function useNavData() {
         subheader: t('overview'),
         items: [
           {
-            title: t('Dashboard'),
+            title: t('Dashboard Admin'),
             path: paths.dashboard.root,
             icon: ICONS.dashboard,
+          },
+          {
+            title: t('Dashboard Employee'),
+            path: paths.dashboard.employee,
+            icon: ICONS.dashboard,
+          },
+          {
+            title: t('Dashboard Company'),
+            path: paths.dashboard.company,
+            icon: ICONS.dashboard,
+          },
+          { title: t('Employee List'), path: paths.dashboard.employeelist, icon: ICONS.user },
+          { title: t('Project List'), path: paths.dashboard.projectlist, icon: ICONS.booking },
+          { title: t('Company List'), path: paths.dashboard.companylist, icon: ICONS.booking },
+          { title: t('Industry List'), path: paths.dashboard.industrylist, icon: ICONS.booking },
+          {
+            title: t('Industry Profile'),
+            path: paths.dashboard.industryprofile,
+            icon: ICONS.booking,
           },
           // {
           //   title: t('ecommerce'),

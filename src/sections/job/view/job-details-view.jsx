@@ -19,6 +19,7 @@ import JobDetailsCandidates from '../job-details-candidates';
 // ----------------------------------------------------------------------
 
 export default function JobDetailsView({ id }) {
+  console.log(id);
   const settings = useSettingsContext();
 
   const currentJob = _jobs.filter((job) => job.id === id)[0];

@@ -46,7 +46,7 @@ export default function BookingNewest({ title, subheader, list, sx, ...other }) 
 
   return (
     <Box sx={{ py: 2, ...sx }} {...other}>
-      <CardHeader
+      {/* <CardHeader
         title={title}
         subheader={subheader}
         action={<CarouselArrows onNext={carousel.onNext} onPrev={carousel.onPrev} />}
@@ -54,7 +54,7 @@ export default function BookingNewest({ title, subheader, list, sx, ...other }) 
           p: 0,
           mb: 3,
         }}
-      />
+      /> */}
 
       <Carousel ref={carousel.carouselRef} {...carousel.carouselSettings}>
         {list.map((item) => (
@@ -74,7 +74,7 @@ BookingNewest.propTypes = {
 
 // ----------------------------------------------------------------------
 
-function BookingItem({ item }) {
+export function BookingItem({ item }) {
   const { avatarUrl, name, duration, bookedAt, guests, coverUrl, price, isHot } = item;
 
   return (
